@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroSustentável | O Futuro da Terra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-leaf"></i> Agro<span>Sustentável</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#pilares">Pilares</a></li>
+                <li><a href="#midia">Galeria & Vídeo</a></li>
+                <li><a href="#simulador">Simulador</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-btn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Cultivando o Amanhã</h1>
+            <p>A agricultura sustentável une tecnologia, respeito à natureza e produtividade para alimentar o mundo sem esgotar o planeta.</p>
+            <a href="#pilares" class="btn">Descubra Como</a>
+        </div>
+    </section>
+
+    <section id="pilares" class="section-container">
+        <h2 class="section-title">Nossos Pilares</h2>
+        <div class="grid-cards">
+            <div class="card">
+                <i class="fa-solid fa-droplet icon-card"></i>
+                <h3>Gestão de Água</h3>
+                <p>Sistemas de irrigação gota a gota e captação de chuva que reduzem o desperdício em até 60%.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-seedling icon-card"></i>
+                <h3>Solo Vivo</h3>
+                <p>Uso de rotação de culturas e adubação orgânica para manter a terra fértil naturalmente.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-solar-panel icon-card"></i>
+                <h3>Energia Limpa</h3>
+                <p>Fazendas movidas a energia solar e biomassa, reduzindo a pegada de carbono do agro.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="midia" class="section-container bg-alt">
+        <h2 class="section-title">O Agro na Prática</h2>
+        
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/QVu3mZzmgNE" title="Vídeo Agro Sustentável" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="gallery">
+            <div class="gallery-item">
+<img src="https://cms-static.e-agro.com.br/blog_eagro_texto_135_Como_a_agricultura_sustentavel_ajuda_no_combate_as_mudancas_climaticas_853x400_ccb143900b.jpg" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 853px; height: 262px; margin: 0px; width: 559px;" alt="Como a agricultura sustentável ajuda no combate às mudanças climáticas" jsname="kn3ccd">
+                <div class="overlay">Tecnologia no Campo</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://d2yghbees9788u.cloudfront.net/agrishow/2021/02/30-mais-produtividade-com-plantio-em-estufa-com-alta-tecnologia.png" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 770px; height: 300px; margin: 0px; width: 700px;" alt="30% mais produtividade com plantio em estufa com alta tecnologia" jsname="kn3ccd">
+                <div class="overlay">Cultivo Protegido</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&w=600&q=80" alt="Mãos com terra e broto">
+                <div class="overlay">Cuidado com o Solo</div>
+            </div>
+       
+        </div>
+    </section>
+
+    <section id="simulador" class="section-container">
+        <h2 class="section-title">Simulador de Impacto</h2>
+        <p class="sim-text">Descubra quanta água pouparias adotando a irrigação inteligente numa plantação fictícia!</p>
+        
+        <div class="simulator-box">
+            <label for="hectares">Tamanho da Plantação (em hectares):</label>
+            <input type="number" id="hectares" min="1" max="1000" value="10">
+            <button onclick="calcularImpacto()" class="btn">Calcular Economia</button>
+            
+            <div id="resultado" class="resultado-box hidden">
+                <p><i class="fa-solid fa-faucet-drip"></i> Economizarias cerca de <strong id="litros">0</strong> litros de água por dia!</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 AgroSustentável. Educando para o futuro.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
